@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imgJogador1"
+        android:layout_width="162dp"
+        android:layout_height="157dp"
+        android:background="@drawable/box"
+        app:layout_constraintBottom_toTopOf="@+id/btnPedra"
+        app:layout_constraintEnd_toStartOf="@+id/imgJogador2"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVitorias"
+        app:layout_constraintVertical_bias="0.184" />
+
+    <ImageButton
+        android:id="@+id/btnTesoura"
+        android:layout_width="111dp"
+        android:layout_height="107dp"
+        android:background="@drawable/tesoura"
+        android:onClick="tocouBotao"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPedra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnPapel"
+        app:layout_constraintTop_toTopOf="@+id/btnPedra"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imgJogador2"
+        android:layout_width="162dp"
+        android:layout_height="157dp"
+        android:background="@drawable/box"
+        app:layout_constraintBottom_toTopOf="@+id/btnPedra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRecorde"
+        app:layout_constraintVertical_bias="0.929" />
+
+    <ImageButton
+        android:id="@+id/btnPapel"
+        android:layout_width="111dp"
+        android:layout_height="107dp"
+        android:background="@drawable/papel"
+        android:onClick="tocouBotao"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPedra"
+        app:layout_constraintEnd_toStartOf="@+id/btnTesoura"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnPedra"
+        app:layout_constraintTop_toTopOf="@+id/btnPedra"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnPedra"
+        android:layout_width="111dp"
+        android:layout_height="107dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/pedra"
+        android:onClick="tocouBotao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnPapel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="204dp"
+        android:layout_height="85dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgJogador1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/jokempo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imgJogador2"
+        app:layout_constraintEnd_toStartOf="@+id/imgJogador2"
+        app:layout_constraintStart_toEndOf="@+id/imgJogador1"
+        app:layout_constraintTop_toBottomOf="@+id/imgJogador1"
+        app:layout_constraintVertical_bias="0.565"
+        app:srcCompat="@drawable/versus" />
+
+    <ImageView
+        android:id="@+id/escolha2"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imgJogador2"
+        app:layout_constraintEnd_toEndOf="@+id/imgJogador2"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/imgJogador2"
+        app:layout_constraintTop_toTopOf="@+id/imgJogador2"
+        app:layout_constraintVertical_bias="0.486"
+        app:srcCompat="@drawable/interrogacao" />
+
+    <ImageView
+        android:id="@+id/escolha1"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imgJogador1"
+        app:layout_constraintEnd_toEndOf="@+id/imgJogador1"
+        app:layout_constraintStart_toStartOf="@+id/imgJogador1"
+        app:layout_constraintTop_toTopOf="@+id/imgJogador1"
+        app:srcCompat="@drawable/interrogacao" />
+
+    <TextView
+        android:id="@+id/txtVitorias"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:gravity="center"
+        android:text="Vitórias consecutivas:"
+        android:textAlignment="center"
+        android:textColor="#7E8D85"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtRecorde"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Recorde:"
+        android:textAlignment="center"
+        android:textColor="#7E8D85"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
