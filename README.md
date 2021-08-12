@@ -53,7 +53,7 @@ Open your Android Studio and run the game.
 
 
 ## 📄 License
-This project is under the MIT license. See the [LICENSE](https://github.com/fegroders/jokenpo/blob/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/fegroders/jokenpo/blob/master/license) for more information.
 
 
 
