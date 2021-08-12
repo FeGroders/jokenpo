@@ -28,7 +28,7 @@
 
 
 <p align="center">
-  <img alt="Banner" src=./assets/print1.png>
+  <img alt="Banner" src=./assets/print.jpg>
 </p>
 
 ## 🚀 Technologies
